@@ -12,14 +12,14 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql.connector.java</artifactId>
-            <version>8.0.30</version>
-        </dependency>
-        <dependency>
             <groupId>org.netbeans.external</groupId>
             <artifactId>AbsoluteLayout</artifactId>
             <version>RELEASE124</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql-connector-java-8.0.30</groupId>
+            <artifactId>mysql</artifactId>
+            <version>8.0.30</version>
         </dependency>
     </dependencies>
 </project>

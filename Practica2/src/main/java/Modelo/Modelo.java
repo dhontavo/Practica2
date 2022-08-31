@@ -22,14 +22,14 @@ public class Modelo {
         try{
             Connection con= conexion.abrirConexion(); 
             Statement s= con.createStatement(); 
-            int registro =s.executeUpdate("EXEC GUARDAR_DISTRIBUIDOR 1" +
+            int registro =s.executeUpdate("CALL GUARDAR_DISTRIBUIDOR 1" +
                     "REPLACE(REPLACE(REPLACE(NOW(),'-',''),' ' ,''),':','')" +
-                    ""+NOMBRE_I+"," +
-                    ""+APELLIDOP_I+"," +
-                    ""+APELLIDOM_I+"," +
-                    ""+CALLE_I+"," +
+                    "'"+NOMBRE_I+"'," +
+                    "'"+APELLIDOP_I+"'," +
+                    "'"+APELLIDOM_I+"'," +
+                    "'"+CALLE_I+"'," +
                     ""+NUMERO_I+"," +
-                    ""+COLONIA_I+""); 
+                    "'"+COLONIA_I+"'"); 
             conexion.cerrarConexion(con); 
             return true; 
         }
